@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.mini_header {
+    font-family: 'Caveat Brush', cursive !important;
+    font-size: 5rem;
+}
+
+nav {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    text-decoration: none;
+}
+
+#logo h1{
+    font-family: 'Caveat', cursive !important;
+    font-size: 4rem;
+    color: #000000;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#logo > img {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Caveat', cursive !important;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.underline_animation {
+    position: relative;
+    display: inline-block;
+}
+
+.underline_animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline_animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 50rem;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+
+.blob1 {
+    position: absolute;
+    top: -15vw;
+    left: -10%;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.blob2 {
+    position: absolute;
+    top: -15vw;
+    right: -10%;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#hero {
+    margin: 30vh;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
