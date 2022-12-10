@@ -95,8 +95,8 @@ body {
     position: absolute;
     top: -15vw;
     left: -10%;
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -105,9 +105,9 @@ body {
 .blob2 {
     position: absolute;
     top: -15vw;
-    right: -10%;
-    width: 50%;
-    height: 50%;
+    right: -10vw;
+    width: 50vw;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -119,4 +119,36 @@ body {
 
 * {
     font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    #right-header {
+        display: none;
+    }
+    #logo {
+        align-self: center;
+    }
+    
+    #hero {
+        margin: 10vh;
+    }
+
+    .mini_header {
+        font-size: 3rem;
+    }
+
+    .mini_p {
+        font-size: 1rem;
+    }
+
+    .blob1 {
+        width: 150vw;
+        top: -65vw;
+        left: -50vw;
+    }
+    .blob2 {
+        width: 150vw;
+        top: 85vw;
+        right: -50vw;
+    }
 }
